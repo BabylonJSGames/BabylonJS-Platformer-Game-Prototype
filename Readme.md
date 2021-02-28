@@ -1,7 +1,7 @@
 # KZ Climbing - A BabylonJS game prototype
 This project is a BabylonJS 3d platformer game prototype, in some ways similar to "KZ" maps in Counter Strike. It uses the built-in BabylonJS collision system for detecting collisions between the player and the platforms.
 
-The project is written in TypeScript.
+The project is written in TypeScript..
 
 ## Disclaimer
 The project is work-in-progress, and contains several incomplete features and bugs.
