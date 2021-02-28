@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "strict": false, 
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": false,
+        "strictFunctionTypes": true,
+        "skipLibCheck": true,
+        "preserveConstEnums":true,
+        "removeComments": true, 
+        "isolatedModules": false,         
+        "inlineSourceMap": true, 
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "rootDir": "src",
+        "outDir": "./dist/"
+    },
+}

@@ -1,0 +1,56 @@
+html, body {
+    overflow: hidden;
+    width   : 100%;
+    height  : 100%;
+    margin  : 0;
+    padding : 0;
+}
+
+#renderCanvas {
+    width   : 100%;
+    height  : 100%;
+    touch-action: none;
+}
+
+#fps_label{
+    position: absolute;
+    background-color: grey;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    top: 15px;
+    right: 10px;
+    width: 60px;
+    height: 20px;
+}
+
+#chat-box {
+    position:absolute;
+    border: 2px solid grey;
+    width: 500px;
+    height: 150px;
+    overflow-y: scroll;
+    left: 0px;
+    bottom: 30px;
+}
+#chat-form {
+    position:absolute;
+    border: 2px solid grey;
+    width: 500px;
+    height: 30px;
+    left: 0px;
+    bottom: 0px;
+}
+
+#chat-input{
+    width: 430px;
+    height: 20px;
+    margin-top: 3px;
+    background: transparent;
+}
+
+#chat-btn {
+ background-color: green;
+ border-radius: 5px;
+}

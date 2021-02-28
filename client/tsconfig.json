@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "es6", // should not be commonjs when using webpack
+    "target": "es5",
+    "moduleResolution": "node",
+		"strict": true,
+		"noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+		"preserveConstEnums":true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "rootDir": "src"
+  },
+}
