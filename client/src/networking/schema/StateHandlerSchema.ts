@@ -8,7 +8,7 @@ export class StateHandlerSchema extends Schema {
     players = new MapSchema<PlayerSchema>();
 
     addPlayer(sessionId: string) {
-        this.players.set(sessionId, new PlayerSchema(sessionId));
+        this.players.set(sessionId, new PlayerSchema().assign({sessionId: sessionId}));
     }
 
     getPlayer(sessionId: string): PlayerSchema {

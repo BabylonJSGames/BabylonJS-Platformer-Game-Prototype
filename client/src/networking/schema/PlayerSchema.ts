@@ -25,10 +25,5 @@ export class PlayerSchema extends Schema {
     @type(PlayerPositionSchema) public playerPosition = new PlayerPositionSchema();
     @type(PlayerDirectionSchema) public playerDirection = new PlayerDirectionSchema();
     @type(PlayerKeySchema) public playerKey = new PlayerKeySchema();
-
-    // We might need to use ".assign instead of a constructor"
-    constructor(sessionId: string) {
-        super();
-        this.sessionId = sessionId;
-    }
+    
 }
