@@ -5,7 +5,7 @@ export default class Config {
     public static showInspector = false;
     // useNetworking can be disabled if you want to only develop client-side
     public static useNetworking = true;
-    public static levelName = "templateLevel.babylon";
+    public static levelName = "Level1.babylon";
     // this address currently hosts the game
     public static socketAddressProduction = "wss://kzclimbing.herokuapp.com";
 }

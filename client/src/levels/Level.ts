@@ -103,8 +103,11 @@ export default class Level {
         // destroy spawnMesh and lookAtMesh after they have been retrieved
         spawnMesh.dispose();
         spawnMesh = null;
-        lookAtMesh.dispose();
-        lookAtMesh = null;
+        // dispose only if LookAt exists as a mesh inside scene
+        if(lookAtMesh){
+            lookAtMesh.dispose();
+            lookAtMesh = null;
+        }
     }
 
     // todo - verify that there is only a single goal mesh
