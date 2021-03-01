@@ -1,7 +1,7 @@
 node_modules
 public/js
-tempateLevel.blend1
-tempateLevel.log
-tempateLevel.babylon.manifest
-Level1.babylon.manifest
-Level1.log
+public/assets/scenes/blender/tempateLevel.blend1
+public/assets/scenes/tempateLevel.log
+public/assets/scenes/tempateLevel.babylon.manifest
+public/assets/scenes/Level1.babylon.manifest
+public/assets/scenes/Level1.log
