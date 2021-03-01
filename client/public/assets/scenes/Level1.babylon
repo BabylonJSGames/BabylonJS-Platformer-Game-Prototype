@@ -94,7 +94,7 @@
 ,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":309,"indexStart":0,"indexCount":372}]
 ,"instances":[]}
-,{"name":"LookAt","id":"LookAt","billboardMode":0,"position":[-0.022,6.6025,0.1523],"rotation":[-1.5708,0,0],"scaling":[1,1,1],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":false,"pickable":true,"tags":""
+,{"name":"LookAt","id":"LookAt","billboardMode":0,"position":[-0.022,4.335,-7.2384],"rotation":[0,-1.5708,0],"scaling":[1,1,1],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":false,"pickable":true,"tags":""
 ,"positions":[-1,1,-1,-1,-1,1,-1,-1,-1,-1,1,1,1,-1,1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,1,1,-1,-1,-1,-1,1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,-1,1,1,1,1,-1
 ,1,1,1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,-1,-1,-1,1,-1,1,1,-1,-1,-1,-1,-1,-1,1,1,-1,1,-1,1,1,-1]
 ,"normals":[-1,0,0,-1,0,0,-1,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,-1,0,0,-1,0,0,-1,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0
