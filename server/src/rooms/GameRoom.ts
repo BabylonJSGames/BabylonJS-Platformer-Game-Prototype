@@ -4,7 +4,7 @@ import { PlayerDirectionSchema, PlayerKeySchema, PlayerPositionSchema } from '..
 import {StateHandlerSchema} from '../schema/StateHandlerSchema';
 
 export class GameRoom extends Room<StateHandlerSchema> {
-    public maxClients = 60;
+    public maxClients = 64;
 
     // When room is initialized
     onCreate(options: any){

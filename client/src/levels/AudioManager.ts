@@ -13,14 +13,14 @@ export default class AudioManager {
     }
 
     public async loadAudio() {
-        this.run = new Sound("RunSound", "../assets/audio/sounds/run.wav", this.scene, null, {loop: true, autoplay: false});
+        this.run = new Sound("RunSound", "assets/audio/sounds/run.wav", this.scene, null, {loop: true, autoplay: false});
         this.run.setVolume(0.2);
 
-        this.crouchWalk = new Sound("CrouchSound", "../assets/audio/sounds/run.wav", this.scene, null, {loop: true, autoplay: false});
+        this.crouchWalk = new Sound("CrouchSound", "assets/audio/sounds/run.wav", this.scene, null, {loop: true, autoplay: false});
         this.crouchWalk.setPlaybackRate(0.6);
         this.crouchWalk.setVolume(0.1);
 
-        this.jump = new Sound("JumpSound", "../assets/audio/sounds/jump_ground.wav", this.scene, null, {loop: false, autoplay: false});
+        this.jump = new Sound("JumpSound", "assets/audio/sounds/jump_ground.wav", this.scene, null, {loop: false, autoplay: false});
         this.jump.setVolume(1.2);
     }
 

@@ -38,9 +38,9 @@ export default class GameRoom {
         this.room.onStateChange((state: StateHandlerSchema) => {
             state.players.forEach((player: PlayerSchema, key: string) => {
                 //updates other player if key does not equal to sessionID
-                if (key !== this.room.sessionId) {
-                    this.level.updateOtherPlayer(player);
-                } 
+                // if (key !== this.room.sessionId) {
+                //     this.level.updateOtherPlayer(player);
+                // }
             });    
         });
     };
@@ -58,7 +58,7 @@ export default class GameRoom {
         this.room.state.players.onRemove = (player: PlayerSchema) => {
             console.log(player, "has been removed", player.sessionId);
             this.level.removeOtherPlayer(player);
-        }
+        };
     }
 
     public update(){

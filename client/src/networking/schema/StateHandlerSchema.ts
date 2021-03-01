@@ -1,6 +1,6 @@
 import {Schema, type, MapSchema} from '@colyseus/schema';
 
-import {PlayerSchema} from './PlayerSchema';
+import {PlayerDirectionSchema, PlayerKeySchema, PlayerPositionSchema, PlayerSchema} from './PlayerSchema';
 
 export class StateHandlerSchema extends Schema {
 
@@ -19,31 +19,31 @@ export class StateHandlerSchema extends Schema {
         this.players.delete(sessionId);
     }
 
-    setKeys(sessionId: string, up: boolean, right: boolean, down: boolean, left: boolean, jump: boolean, crouch: boolean) {
-        this.getPlayer(sessionId).playerKey.up = up;
-        this.getPlayer(sessionId).playerKey.right = right;
-        this.getPlayer(sessionId).playerKey.down = down;
-        this.getPlayer(sessionId).playerKey.left = left;
-        this.getPlayer(sessionId).playerKey.jump = jump;
-        this.getPlayer(sessionId).playerKey.crouch = crouch;
-    }
-
-    setPosition(sessionId: string, x: number, y: number, z: number) {
-            this.getPlayer(sessionId).playerPosition.x = x;
-            this.getPlayer(sessionId).playerPosition.y = y;
-            this.getPlayer(sessionId).playerPosition.z = z;
-    }
-
     getPosition(sessionId: string): object {
         const pos = this.getPlayer(sessionId).playerPosition;
-        return {'x': pos.x, 'y': pos.y, 'z': pos.z};
-    }
-
-    setDirection(sessionId: string, rotationY: number){
-        this.getPlayer(sessionId).playerDirection.rotationY = rotationY;
+        return {'x': pos.x, 'y': pos.y, 'z': pos.z };
     }
 
     getDirection(sessionId: string): object {
         return {"rotationY": this.getPlayer(sessionId).playerDirection.rotationY}
+    }
+
+    setDirection(sessionId: string, direction: PlayerDirectionSchema) {
+        this.getPlayer(sessionId).playerDirection.rotationY = direction.rotationY;
+    }
+
+    setKeys(sessionId: string, keys: PlayerKeySchema) {
+        this.getPlayer(sessionId).playerKey.up = keys.up;
+        this.getPlayer(sessionId).playerKey.right = keys.right;
+        this.getPlayer(sessionId).playerKey.down = keys.down;
+        this.getPlayer(sessionId).playerKey.left = keys.left;
+        this.getPlayer(sessionId).playerKey.jump = keys.jump;
+        this.getPlayer(sessionId).playerKey.crouch = keys.crouch;
+    }
+
+    setPosition(sessionId: string, position: PlayerPositionSchema) {
+        this.getPlayer(sessionId).playerPosition.x = position.x;
+        this.getPlayer(sessionId).playerPosition.y = position.y;
+        this.getPlayer(sessionId).playerPosition.z = position.z;
     }
 }

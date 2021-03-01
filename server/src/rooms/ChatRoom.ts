@@ -1,7 +1,7 @@
 import {Room} from 'colyseus';
 
 export class ChatRoom extends Room {
-    maxClients = 4;
+    maxClients = 64;
 
     // When room is initialized
     onCreate(options: any){
