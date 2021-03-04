@@ -108,7 +108,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,3,19,4,6,20,7,9,21,22,23,24,25,26,27,28]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":29,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"Goal","id":"Goal","billboardMode":0,"position":[-3.923,114.0757,-28.493],"rotation":[0,0,0],"scaling":[1,1,1],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"Goal","id":"Goal","billboardMode":0,"position":[-3.923,110.8075,-28.493],"rotation":[0,0,0],"scaling":[1,1,1],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[0,0.5556,0.8315,0.1802,0.3827,0.9061,0,0.3827,0.9239,0,-0.8315,0.5556,0.0747,-0.9239,0.3753,0,-0.9239,0.3827,0,0.3827,0.9239,0.1913,0.1951,0.9619,0,0.1951,0.9808,0,-0.9239,0.3827,0.0381,-0.9808,0.1913,0,-0.9808,0.1951,0,0.1951,0.9808,0.1951,0,0.9808,0,0,1,0,0.9808,0.1951,0,1,0
 ,0.0381,0.9808,0.1913,0,-1,0,0,-0.9808,0.1951,0.0381,-0.9808,0.1913,0,0,1,0.1913,-0.1951,0.9619,0,-0.1951,0.9808,0,0.9808,0.1951,0.0747,0.9239,0.3753,0,0.9239,0.3827,0,-0.1951,0.9808,0.1802,-0.3827,0.9061,0,-0.3827,0.9239,0,0.8315,0.5556,0.0747,0.9239,0.3753,0.1084,0.8315,0.5449,0,-0.3827,0.9239
 ,0.1622,-0.5556,0.8155,0,-0.5556,0.8315,0,0.8315,0.5556,0.1379,0.7071,0.6935,0,0.7071,0.7071,0,-0.5556,0.8315,0.1379,-0.7071,0.6935,0,-0.7071,0.7071,0,0.7071,0.7071,0.1622,0.5556,0.8155,0,0.5556,0.8315,0,-0.7071,0.7071,0.1084,-0.8315,0.5449,0,-0.8315,0.5556,0.1379,0.7071,0.6935,0.3182,0.5556,0.7682,0.1622,0.5556,0.8155
@@ -618,7 +618,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"ColliderCube.005","id":"ColliderCube.005","materialId":"Material.007","billboardMode":0,"position":[-3.8899,105.5097,-28.6268],"rotation":[0,0,0],"scaling":[5,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.005","id":"ColliderCube.005","materialId":"Material.007","billboardMode":0,"position":[-3.8899,102.9638,-28.6268],"rotation":[0,0,0],"scaling":[5,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
@@ -1210,7 +1210,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"ColliderCube.013","id":"ColliderCube.013","materialId":"Material.015","billboardMode":0,"position":[8.7881,96.3259,-12.3816],"rotation":[0,0,0],"scaling":[5,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.013","id":"ColliderCube.013","materialId":"Material.015","billboardMode":0,"position":[8.7881,93.7051,-12.3816],"rotation":[0,0,0],"scaling":[5,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
@@ -1421,6 +1421,6 @@
 ],
 "morphTargetManagers":[],
 "cameras":[],
-"lights":[{"name":"Sun","id":"Sun","type":1,"position":[88.906,86.8649,9.2079],"direction":[-0.5905,-0.807,-0.007],"intensityMode":0,"shadowMinZ":40,"shadowMaxZ":350,"intensity":1,"diffuse":[1,1,1],"specular":[1,1,1],"radius":0.125}],
-"shadowGenerators":[{"mapSize":512,"lightId":"Sun","bias":0.0005,"darkness":0,"useBlurCloseExponentialShadowMap":true,"blurScale":2,"blurBoxOffset":0,"renderList":["ColliderCube","ColliderGround","Spawn","Goal","ColliderCube.001","ColliderCube.002","ColliderCube.003","ColliderCube.004","ColliderCube.005","ColliderTorus","ColliderCube.008","ColliderCube.009","ColliderCube.010","ColliderCube.011","ColliderCube.012","ColliderCube.013","ColliderCube.015","ColliderCube.016","ColliderCube.006","ColliderCube.017","ColliderCone","ColliderCone.001","ColliderCone.002","ColliderCone.003","ColliderCube.007"]}]
+"lights":[{"name":"Sun","id":"Sun","type":1,"position":[88.906,86.8649,9.2079],"direction":[-0.5905,-0.807,-0.007],"intensityMode":0,"intensity":0.2,"diffuse":[1,1,1],"specular":[1,1,1],"radius":0.125}],
+"shadowGenerators":[{"mapSize":512,"lightId":"Sun","bias":0.0006,"darkness":0,"useBlurExponentialShadowMap":true,"blurScale":2,"blurBoxOffset":0,"renderList":["ColliderCube","ColliderGround","Spawn","Goal","ColliderCube.001","ColliderCube.002","ColliderCube.003","ColliderCube.004","ColliderCube.005","ColliderTorus","ColliderCube.008","ColliderCube.009","ColliderCube.010","ColliderCube.011","ColliderCube.012","ColliderCube.013","ColliderCube.015","ColliderCube.016","ColliderCube.006","ColliderCube.017","ColliderCone","ColliderCone.001","ColliderCone.002","ColliderCone.003","ColliderCube.007"]}]
 }
