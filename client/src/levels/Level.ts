@@ -1,6 +1,7 @@
 import { Scene } from "@babylonjs/core/scene";
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
+import { DirectionalLight } from "@babylonjs/core/Lights/directionalLight";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 import { Color3 } from "@babylonjs/core/Maths/math.color";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
@@ -19,7 +20,7 @@ import { PlayerSchema } from "../networking/schema/PlayerSchema";
 import Timer from "./components/Timer";
 import Spawn from "./components/Spawn";
 import AudioManager from "./AudioManager";
-import { HemisphericLight } from "@babylonjs/core";
+import { HemisphericLight, SubMesh } from "@babylonjs/core";
 
 export default class Level {
     public scene: Scene;
@@ -82,7 +83,11 @@ export default class Level {
         // If no lightning is added from blender add it manually
         if (this.scene.lights.length == 0) {
             this.setupLighting();
-        } 
+            
+        } else {   
+            
+        }
+
         this.setupSpawn();
         this.setupGoal();
     }
