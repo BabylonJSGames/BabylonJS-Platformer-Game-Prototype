@@ -19,20 +19,20 @@ export class StateHandlerSchema extends Schema {
         this.players.delete(sessionId);
     }
 
-    getPosition(sessionId: string): object {
+    getPlayerPosition(sessionId: string): object {
         const pos = this.getPlayer(sessionId).playerPosition;
         return {'x': pos.x, 'y': pos.y, 'z': pos.z };
     }
 
-    getDirection(sessionId: string): object {
+    getPlayerDirection(sessionId: string): object {
         return {"rotationY": this.getPlayer(sessionId).playerDirection.rotationY}
     }
 
-    setDirection(sessionId: string, direction: PlayerDirectionSchema) {
+    setPlayerDirection(sessionId: string, direction: PlayerDirectionSchema) {
         this.getPlayer(sessionId).playerDirection.rotationY = direction.rotationY;
     }
 
-    setKeys(sessionId: string, keys: PlayerKeySchema) {
+    setPlayerKeys(sessionId: string, keys: PlayerKeySchema) {
         this.getPlayer(sessionId).playerKey.up = keys.up;
         this.getPlayer(sessionId).playerKey.right = keys.right;
         this.getPlayer(sessionId).playerKey.down = keys.down;
@@ -41,7 +41,7 @@ export class StateHandlerSchema extends Schema {
         this.getPlayer(sessionId).playerKey.crouch = keys.crouch;
     }
 
-    setPosition(sessionId: string, position: PlayerPositionSchema) {
+    setPlayerPosition(sessionId: string, position: PlayerPositionSchema) {
         this.getPlayer(sessionId).playerPosition.x = position.x;
         this.getPlayer(sessionId).playerPosition.y = position.y;
         this.getPlayer(sessionId).playerPosition.z = position.z;

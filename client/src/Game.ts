@@ -46,7 +46,7 @@ export default class Game {
             Game.currentLevel.update();
 
             if (Config.useNetworking) {
-                this.gameRoom.update();
+                this.gameRoom.updatePlayerToServer();
             }
 
             let fpsLabel = document.getElementById("fps_label");
