@@ -15,16 +15,17 @@ What this project includes:
   - Simple chat functionality
   - Colyseus monitor and loadtest for serverside
 3. Contains a [config.ts](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/src/Config.ts) file used for chaning important parameters
-4. Posibility to import your own level from blender
+4. A guide on how to create your own level and import it to Babylon from blender.
 5. Examples for how to setup webpack.xxx.js, tsconfig.json and package.json files
 6. An easy guilde on how to deploy the game locally and to netlify and heroku
 
 What this project does not include:
 1. Client-side Liner interplation(LERP) funcitonality
-2. BabylonJS NullEngine on server side for collision
-3. A Lobby
-4. Leader scoreboard
-5. Login authentication
+2. BabylonJS NullEngine on server side for collision detection
+  - Used to prevent clients from cheating
+4. A Lobby
+5. Leader scoreboard
+6. Login authentication
 
 ## Setup locally
 1. Download and install [Nodejs](https://nodejs.org/en/) if you haven't already.
@@ -85,10 +86,14 @@ What this project does not include:
     - Mesh is named __LookAt__: At spawn, the player will initially look towards the position of this mesh. The mesh will be deleted from the scene on load. If this mesh is not found, lookAt will default to the zero vector.
     - Mesh does not follow any of the naming rules above: These are decorative meshes and they won't be part of the collision system.
 5. Create light source(s) and name them as you like. If the scene does not include a light source, a hemispheric light will automatically be inserted after the level import.
-6. Export your level by selecting *File->Export->Babylon.js ver 2.xx.x* (or whichever version you have).
-7. Move your exported .babylonjs file into the project at *client/public/assets/scenes/*.
-8. In the `Config.ts` file, set the `levelName` variable to the name of your exported file, e.g. if your file is located at *client/public/assets/scenes/level.babylonjs*, put in *level.babylonjs*, without the full path.
-9. Rebuild the project.
+6. Create Shadows by selecting meshes and checking the *cast shadows* and *recieve shadows* properties in blender.
+7. Export your level by selecting *File->Export->Babylon.js ver 2.xx.x* (or whichever version you have).
+8. Move your exported .babylonjs file into the project at *client/public/assets/scenes/*.
+9. In the `Config.ts` file, set the `levelName` variable to the name of your exported file, e.g. if your file is located at *client/public/assets/scenes/level.babylonjs*, put in *level.babylonjs*, without the full path.
+10. If doing this locally, then just reload the page.
+11. If on netlify push the changes to yor forked github repo and rebuild netlify, see step 17 under section *Netlify (client side)*
+   - No need to update heroku.
+12. You should now be able to play your level through.
 
 ### Additional notes:
 - After importing the level, the following will be added to the scene:
@@ -97,6 +102,8 @@ What this project does not include:
 - You are free to use whichever mesh shapes, sizes and textures as you please. This includes the __Goal__ mesh and the __Collider__ meshes as well.
 - The player has a width of 4 and a height of 8. The player can crouch to a height of 4 instead. Take this into account when creating your level.
 - You will very likely have to play around with the level to ensure the player controls match well with the level design and layout.
+- Some lights and shadows functionalities is missing for the blender to BabylonJS exporter, this might help you out: https://forum.babylonjs.com/t/exporting-shadows-from-blender-to-babylon-js/18580/5. 
+- For best shadows and light, look into the [level1.BABYLON](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/public/assets/scenes/Level1.babylon) for inspiration, scroll down to *Lights* and *shadowGenerators*, also check out the forum link above.
 
 ## Disclaimer
 The project is work-in-progress, and contains several incomplete features and bugs.
@@ -105,7 +112,18 @@ There is no intention of any future work on this project.
 
 This is only ment as a public demonstration of how to use babylonjs and colyseus.
 
-## Inspiration
+## Inspiration and thanks
+Some inspiration for how to generally use Colyseus: 
+1. https://github.com/endel/colyseus-babylonjs-boilerplate
+2. https://github.com/colyseus/unity-demo-shooting-gallery
+3. https://github.com/endel/mazmorra
+4. https://github.com/creationspirit/multiplayer-browser-game-boilerplate
+5. https://www.youtube.com/watch?v=s3ZrQbI5o_k&ab_channel=Moby
+6. https://www.youtube.com/watch?v=x-bbflZvuXE&ab_channel=Ourcade
+
+Thanks to all of those who created the repos and youtube video. 
+
+Thanks to especially the Colyseus and BabylonJS community. 
 
 ## License
 This project is made by [Jacob Pjetursoon](https://github.com/JacobPjetursson) and [Fadi Bunni](https://github.com/orgs/BabylonJSGames/people/FadiBunni)
