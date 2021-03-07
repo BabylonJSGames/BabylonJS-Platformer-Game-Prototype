@@ -7,6 +7,11 @@ An online version of the game can be found here: https://kzclimbing.netlify.app/
 
 ![Demo](play.gif)
 
+## Disclaimer
+The project is work-in-progress, and contains several incomplete features and bugs. The project is only meant as a public demonstration of Babylonjs and Colyseus.
+
+There is no intention of any future work on this project.
+
 ## How to setup project locally
 1. Download and install [Nodejs](https://nodejs.org/en/) if you haven't already.
 2. Download and install [Typescript](https://www.typescriptlang.org/).
@@ -38,8 +43,3 @@ An online version of the game can be found here: https://kzclimbing.netlify.app/
     - A hemispheric ambient light (if no light source exists in the imported file).
 - The player has a width of 4 and a height of 8. The player can crouch to a height of 4 instead. Take this into account when creating your level. The cylinder mesh in `templateLevel.blend` has these metrics, so you can use this for reference.
 - You will very likely have to play around with the level to ensure the player controls match well with the level design and layout.
-
-## Disclaimer
-The project is work-in-progress, and contains several incomplete features and bugs. The project is only meant as a public demonstration of Babylonjs and Colyseus.
-
-There is no intention of any future work on this project.
