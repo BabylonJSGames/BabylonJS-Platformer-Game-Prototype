@@ -19,7 +19,6 @@ export interface IMoveKeys {
     left: boolean;
     right: boolean;
     jump: boolean;
-    crouch: boolean;
 }
 
 export default class PlayerControls {

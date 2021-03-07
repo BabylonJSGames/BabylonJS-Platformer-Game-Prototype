@@ -4,13 +4,16 @@ export class PlayerDirectionSchema extends Schema {
     @type('number') public rotationY: number;
 }
 
+export class PlayerCrouchSchema extends Schema {
+    @type('boolean') public crouching: boolean;
+}
+
 export class PlayerKeySchema extends Schema {
     @type('boolean') public up: boolean;
     @type('boolean') public right: boolean;
     @type('boolean') public down: boolean;
     @type('boolean') public left: boolean;
     @type('boolean') public jump: boolean;
-    @type('boolean') public crouch: boolean;
 }
 
 export class PlayerPositionSchema extends Schema {
@@ -25,5 +28,5 @@ export class PlayerSchema extends Schema {
     @type(PlayerPositionSchema) public playerPosition = new PlayerPositionSchema();
     @type(PlayerDirectionSchema) public playerDirection = new PlayerDirectionSchema();
     @type(PlayerKeySchema) public playerKey = new PlayerKeySchema();
-
+    @type(PlayerCrouchSchema) public playerCrouch = new PlayerCrouchSchema();
 }

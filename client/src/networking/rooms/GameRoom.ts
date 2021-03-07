@@ -61,13 +61,15 @@ export default class GameRoom {
         };
     }
 
-    public update(){
+
+    public updatePlayerToServer(){
         const pos = this.clientPlayer.getPosition();
         const dir = this.clientPlayer.getDirection();
         const keys = this.clientPlayer.controls.keys;
 
         this.room.send("playerPosition", {x: pos.x, y: pos.y, z: pos.z});
         this.room.send("playerDirection", {rotationY: dir.y});
-        this.room.send("playerKey", {up: keys.up, right: keys.right, down: keys.down, left: keys.left, jump: keys.jump, crouch: keys.crouch});
+        this.room.send("playerKey", {up: keys.up, right: keys.right, down: keys.down, left: keys.left, jump: keys.jump});
+        this.room.send("playerCrouching", {crouching: this.clientPlayer.crouching});
     }
 }

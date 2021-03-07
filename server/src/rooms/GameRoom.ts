@@ -1,5 +1,5 @@
 import {Room, Client} from 'colyseus';
-import { PlayerDirectionSchema, PlayerKeySchema, PlayerPositionSchema } from '../schema/PlayerSchema';
+import { PlayerCrouchSchema, PlayerDirectionSchema, PlayerKeySchema, PlayerPositionSchema } from '../schema/PlayerSchema';
 
 import {StateHandlerSchema} from '../schema/StateHandlerSchema';
 
@@ -33,6 +33,10 @@ export class GameRoom extends Room<StateHandlerSchema> {
 
         this.onMessage("playerDirection", (client, data: PlayerDirectionSchema) => {
             this.state.setDirection(client.sessionId, data);
+        });
+
+        this.onMessage("playerCrouching", (client, data: PlayerCrouchSchema) => {
+            this.state.setCrouching(client.sessionId, data);
         });
 
         this.onMessage("playerKey", (client, data: PlayerKeySchema) => {

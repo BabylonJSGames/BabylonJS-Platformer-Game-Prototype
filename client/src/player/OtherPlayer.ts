@@ -15,6 +15,7 @@ export default class OtherPlayer extends AbstractPlayer {
         const newPos = playerSchema.playerPosition;
         const newDir = playerSchema.playerDirection;
         const newKeys = playerSchema.playerKey;
+        const newCrouch = playerSchema.playerCrouch.crouching;
 
         this.mesh.update();
         const onGround = this.mesh.isOnGround();
@@ -22,18 +23,18 @@ export default class OtherPlayer extends AbstractPlayer {
         this.mesh.get().position.set(newPos.x, newPos.y, newPos.z);
         this.mesh.get().rotation.y = newDir.rotationY;
 
-        this.handleKeys(newKeys, onGround, moveDirection);
+        this.handleKeys(newKeys, newCrouch, onGround, moveDirection);
     }
 
-    private handleKeys(keys: IMoveKeys, onGround: boolean, moveDirection: MoveDirection) {
+    private handleKeys(keys: IMoveKeys, newCrouch: boolean, onGround: boolean, moveDirection: MoveDirection) {
 
         // animations
         this.mesh.animator.update(moveDirection, onGround);
 
         // crouch
-        if (keys.crouch != this.crouching) {
-            this.crouching = keys.crouch;
-            this.switchMesh(keys.crouch);
+        if (newCrouch != this.crouching) {
+            this.crouching = newCrouch;
+            this.switchMesh(newCrouch);
         }
     }
 }
