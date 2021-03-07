@@ -13,7 +13,7 @@ The project is work-in-progress, and contains several incomplete features and bu
 There is no intention of any future work on this project.
 
 ## How to setup project locally
-1. Download and install [Nodejs](https://nodejs.org/en/) if you haven't already.
+1. Download and install [Nodejs](https://nodejs.org/en/).
 2. Download and install [Typescript](https://www.typescriptlang.org/).
 3. Clone this repo to your local machine.
 4. Open a terminal and navigate to the *server* directory and run the command `npm install` followed by `npm run dev` to start the server
