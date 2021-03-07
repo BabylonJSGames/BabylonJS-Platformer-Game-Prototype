@@ -44,7 +44,7 @@
 {"name":"Material.021","id":"Material.021","customType":"BABYLON.PBRMaterial","backFaceCulling":true,"checkReadyOnlyOnce":false,"maxSimultaneousLights":4,"environmentIntensity":1,"reflectivity":[0.5,0.5,0.5],"roughness":0.4,"alpha":1,"transparencyMode":0,"alphaCutOff":0.4,"metallic":0, 
 "albedoTexture":{"name":"Stone.png","level":1,"hasAlpha":false,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":3,"vScale":3,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0},"useAlphaFromAlbedoTexture":false},
 {"name":"Material.023","id":"Material.023","customType":"BABYLON.PBRMaterial","backFaceCulling":true,"checkReadyOnlyOnce":false,"maxSimultaneousLights":4,"environmentIntensity":1,"reflectivity":[0.5,0.5,0.5],"roughness":0.4,"alpha":1,"transparencyMode":0,"alphaCutOff":0.4,"metallic":0, 
-"albedoTexture":{"name":"Stone.png","level":1,"hasAlpha":false,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":3,"vScale":3,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0},"useAlphaFromAlbedoTexture":false}],
+"albedoTexture":{"name":"floor.png","level":1,"hasAlpha":true,"coordinatesMode":0,"uOffset":0,"vOffset":0,"uScale":3,"vScale":3,"uAng":0,"vAng":0,"wAng":0,"wrapU":1,"wrapV":1,"coordinatesIndex":0},"useAlphaFromAlbedoTexture":true}],
 "multiMaterials":[],
 "skeletons":[],
 "meshes":[{"name":"ColliderCube","id":"ColliderCube","materialId":"Material.002","billboardMode":0,"position":[0,1.6356,-15],"rotation":[0,0,0],"scaling":[5,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
@@ -1219,7 +1219,7 @@
 ,1689,2873,2874,2875,2876,2877,2878,2879,2880,2881,2882,2883,2884,2885,2886,2887,2888,1705,2889,2890,2891,2892,2893,2894,2895,2896,1714,2897,2898,2899,2900,2901,2902,2903,2904,2905,2906,2907,2908]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":2909,"indexStart":0,"indexCount":3456}]
 ,"instances":[]}
-,{"name":"ColliderCube.008","id":"ColliderCube.008","materialId":"Material.010","billboardMode":0,"position":[-80.7,75.5829,12.4303],"rotation":[-1.5708,0,0],"scaling":[25,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.008","id":"ColliderCube.008","materialId":"Material.010","billboardMode":0,"position":[-80.7,74.4812,12.4303],"rotation":[-1.5708,0,0],"scaling":[25,0.5,3],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
@@ -1229,7 +1229,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"ColliderCube.009","id":"ColliderCube.009","materialId":"Material.011","billboardMode":0,"position":[-80.7,75.5829,3.4386],"rotation":[-1.5708,0,0],"scaling":[25,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.009","id":"ColliderCube.009","materialId":"Material.011","billboardMode":0,"position":[-80.7,74.5482,3.4386],"rotation":[-1.5708,0,0],"scaling":[25,0.5,3],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
@@ -1239,7 +1239,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"ColliderCube.010","id":"ColliderCube.010","materialId":"Material.012","billboardMode":0,"position":[-83.9326,80.1499,7.9057],"rotation":[0,0,0],"scaling":[22,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.010","id":"ColliderCube.010","materialId":"Material.012","billboardMode":0,"position":[-83.9326,77.2716,7.9057],"rotation":[0,0,0],"scaling":[22,0.5,5],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
@@ -1259,7 +1259,7 @@
 ,"indices":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0,18,1,19,20,4,6,21,7,9,22,23,24,25,26,27,28,29]
 ,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":30,"indexStart":0,"indexCount":36}]
 ,"instances":[]}
-,{"name":"ColliderCube.012","id":"ColliderCube.012","materialId":"Material.014","billboardMode":0,"position":[-113.2398,65.6827,8.5223],"rotation":[0,0,0],"scaling":[5,0.5,7],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
+,{"name":"ColliderCube.012","id":"ColliderCube.012","materialId":"Material.014","billboardMode":0,"position":[-113.2398,64.9559,8.5223],"rotation":[0,0,0],"scaling":[5,0.5,7],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":false,"receiveShadows":true,"pickable":true,"tags":""
 ,"positions":[-1,1,1,1,1,-1,1,1,1,1,1,-1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,-1,1,-1,1,-1,1,1,1,-1,1
 ,-1,-1,1,-1,1,-1,1,1,-1,-1,1,-1,-1,1,1,1,-1,-1,-1,-1,-1,1,1,1,1,1,-1,1,-1,-1,-1,1,1,1,1,1,1,-1,1]
 ,"normals":[0,1,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,-1,0,0,-1,0,0,-1,0,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1
