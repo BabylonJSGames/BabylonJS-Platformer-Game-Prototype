@@ -1,4 +1,4 @@
-# KZ Climbing - A BabylonJS and colyseus game prototype
+# KZ Climbing - A BabylonJS and Colyseus game prototype
 This project is a multiplayer 3d platformer game prototype. The game is similar to "KZ" maps in Counter Strike. It utilises the [BabylonJS](https://www.babylonjs.com/) framework for rendering and the [Colyseus](https://www.colyseus.io/) framework for the multiplayer aspect.
 
 The project is written purely in TypeScript.
