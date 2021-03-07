@@ -1,14 +1,30 @@
-# KZ Climbing - A BabylonJS game prototype
-This project is a BabylonJS 3d platformer game prototype, in some ways similar to "KZ" maps in Counter Strike. It uses the built-in BabylonJS collision system for detecting collisions between the player and the platforms.
+# KZ Climbing - A BabylonJS and colyseus game prototype
+This project is a multiplayer 3d platformer game prototype based on [BabylonJS](https://www.babylonjs.com/) for client side and [Colyseus](https://www.colyseus.io/) for server side, in some ways is it similar to "KZ" maps in Counter Strike. It uses the built-in BabylonJS collision system for detecting collisions between the player and the platforms and it also uses colyseus to make it a authority based multiplayer game.  
 
-The project is written in TypeScript both server and client side.
+The project is written in TypeScript both on server and client side.
 
-## Disclaimer
-The project is work-in-progress, and contains several incomplete features and bugs.
+What this project includes:
+1. A well documented cliet side BabylonJS prototype
+  - Animation, lightning and shadows, camera (1. and 3. person), 
+  - UI and Audio
+  - Homade "physics" and built-in collision system.
+  - Easy and understandable gamme loop code setup.
+2. A well decumented server side Colyseus prototype
+  - Handling data from multiple clients
+  - Implementation for cloyseus schema (client and server side)
+  - Simple chat functionality
+  - Colyseus monitor and loadtest for serverside
+3. Contains a [config.ts](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/src/Config.ts) file used for chaning important parameters
+4. Posibility to import your own level from blender
+5. Examples for how to setup webpack.xxx.js, tsconfig.json and package.json files
+6. An easy guilde on how to deploy the game locally and to netlify and heroku
 
-There is no intention of any future work on this project.
-
-This is only ment as a public demonstration of how to use babylonjs and colyseus.
+What this project does not include:
+1. Client-side Liner interplation(LERP) funcitonality
+2. BabylonJS NullEngine on server side for collision
+3. A Lobby
+4. Leader scoreboard
+5. Login authentication
 
 ## Setup locally
 1. Download and install [Nodejs](https://nodejs.org/en/) if you haven't already.
@@ -81,3 +97,18 @@ This is only ment as a public demonstration of how to use babylonjs and colyseus
 - You are free to use whichever mesh shapes, sizes and textures as you please. This includes the __Goal__ mesh and the __Collider__ meshes as well.
 - The player has a width of 4 and a height of 8. The player can crouch to a height of 4 instead. Take this into account when creating your level.
 - You will very likely have to play around with the level to ensure the player controls match well with the level design and layout.
+
+## Disclaimer
+The project is work-in-progress, and contains several incomplete features and bugs.
+
+There is no intention of any future work on this project.
+
+This is only ment as a public demonstration of how to use babylonjs and colyseus.
+
+## Inspiration
+
+## License
+This project is made by [Jacob Pjetursoon](https://github.com/JacobPjetursson) and [Fadi Bunni](https://github.com/orgs/BabylonJSGames/people/FadiBunni)
+
+See the [LICENSE]() file for license rights and limitations (MIT).
+
