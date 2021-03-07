@@ -3,6 +3,8 @@ This project is a multiplayer 3d platformer game prototype based on [BabylonJS](
 
 The project is written in TypeScript both on server and client side.
 
+An online version of the game can be found here: https://kzclimbing.netlify.app/client/public/index.html
+
 What this project includes:
 1. A well documented cliet side BabylonJS prototype
   - Animation, lightning and shadows, camera (1. and 3. person), 
@@ -128,5 +130,5 @@ Thanks to especially the Colyseus and BabylonJS community.
 ## License
 This project is made by [Jacob Pjetursoon](https://github.com/JacobPjetursson) and [Fadi Bunni](https://github.com/orgs/BabylonJSGames/people/FadiBunni)
 
-See the [LICENSE]() file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/LICENSE.MD) file for license rights and limitations (MIT).
 
