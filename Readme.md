@@ -10,11 +10,52 @@ There is no intention of any future work on this project.
 
 This is only ment as a public demonstration of how to use babylonjs and colyseus.
 
-## Setup
-1. Download and install [npm](https://www.npmjs.com/get-npm) if you haven't already.
-2. Open a terminal and navigate to the *server* directory and run the command `npm install` followed by `npm run dev` to start the server
-3. Open a new terminal and navigate to the *client* directory and repeat the process above to start the client.
-4. A browser window should now automatically open. If not, go to [localhost:8080](http://localhost:8080/).
+## Setup locally
+1. Download and install [Nodejs](https://nodejs.org/en/) if you haven't already.
+2. Download and install [Typescript](https://www.typescriptlang.org/).
+3. Clone this [repo](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype.git) to your local machine.
+4. Open a terminal and navigate to the *server* directory and run the command `npm install` followed by `npm run dev` to start the server
+5. Open a new terminal and navigate to the *client* directory and repeat the process above to start the client.
+6. A browser window should now automatically open. If not, go to [localhost:8080](http://localhost:8080/).
+
+### Colysues monitor
+7. Go http://localhost:8081/colyseus/#/. You can now monitor clients in any room, read more about it her: https://docs.colyseus.io/tools/monitor/.
+
+### Colysues Load testing
+8. Open a terminal and navigate to the root folder *BabylonJS-Platformer-Game-Prototype*.
+9. Install npx by running the command `npm install -g npx`.
+10. Run the command `npx colyseus-loadtest server/src/loadtester/LoadTester.ts --room GameRoom --numClients 50 --endpoint ws://localhost:8081`.
+11. You can adjust the numer of clients connected to the server by changing *--numClients*.
+12. Go to *http://localhost:8081/colyseus/#/* to check out the number of clients connected in which room. 
+
+## Setup using netlify(client side) and heroku(server side).
+1. Create an account both on netlify and heroku.
+2. Fork this [repo](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype.git) to your own github. 
+
+### Heroku (Server side)
+3. Create a new app and give it a name, then choose a region.
+4. Choose github as deploy method and find the forked repo on your github then press *connect*.
+5. Now press on *settings* tab and the press on *reveal config vars*.
+6. Key should be `PROJECT_PATH` and value should be `server`, then press *add*.
+7. Now press *add build pack* and add this: `https://github.com/timanovsky/subdir-heroku-buildpack.git` then press *save changes*.
+8. Again press *add build pack* this time also add nodejs then press *save changes*.
+9. Make sure that `https://github.com/timanovsky/subdir-heroku-buildpack.git` is highest up in the build pack!!!
+10. Now go press on *deploy* tab and sroll down and press on *deploy branch*
+11. You should see it build and after a few seconds it should be finished.
+12. Now scroll up and press on *more* and choose *view logs*
+13. If everything is well you should be able to spot the output *listening on http://localhost:xxxx* in the logs
+
+### Netlify (client side) 
+14. Create a new site *new site from git* and connect to your github choosing the forked repo.
+15. Press *deploy site*.
+16. Go to *site settings* and press *change site name* and change it to what ever you like then press *save*.
+17. The site will be deployed at https://WhatEverYouNamedIt.netlify.app/client/public/index.html. 
+18. Then press on *build and deploy*.
+19. Press *edit build settings*.
+20. *Base birectory* should be set to *client*, *build command* should be *npm run build* and *public directory* should be *client/*, then press *save*.
+21. Go to *deploy* and press *Trigger deploy* then choose *clear cashe and deploy site*.
+22. Now client side should be up and running.
+23. If you go to https://WhatEverYouNamedIt.netlify.app/client/public/index.html in your browser you should be able to play the game with friends now.
 
 ## Guide to making your own maps in Blender3D
 1. Download and install [Blender](https://www.blender.org/).
