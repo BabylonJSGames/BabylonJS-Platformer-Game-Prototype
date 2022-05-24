@@ -17,24 +17,24 @@
   "license": "ISC",
   "homepage": "https://github.com/JacobPjetursson/KZClimbing#readme",
   "dependencies": {
-    "@babylonjs/core": "4.2.0",
-    "@babylonjs/gui": "4.2.0",
-    "@babylonjs/loaders": "4.2.0",
-    "@babylonjs/materials": "4.2.0",
-    "@babylonjs/inspector": "4.2.0",
+    "@babylonjs/core": "5.7.0",
+    "@babylonjs/gui": "5.7.0",
+    "@babylonjs/loaders": "5.7.0",
+    "@babylonjs/materials": "5.7.0",
+    "@babylonjs/inspector": "5.7.0",
     "colyseus.js": "^0.14.0"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "npm-run-all": "^4.1.5",
     "path": "^0.12.7",
-    "terser-webpack-plugin": "^4.2.3",
-    "ts-loader": "^5.3.3",
-    "ts-node": "^8.10.1",
-    "typescript": "^3.9.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^4.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.8.0"
   }
 }
