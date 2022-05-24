@@ -122,6 +122,7 @@ Some inspiration for how to generally use Colyseus:
 4. https://github.com/creationspirit/multiplayer-browser-game-boilerplate
 5. https://www.youtube.com/watch?v=s3ZrQbI5o_k&ab_channel=Moby
 6. https://www.youtube.com/watch?v=x-bbflZvuXE&ab_channel=Ourcade
+7. https://www.youtube.com/watch?v=M9RDYkFs-EQ
 
 Thanks to all of those who created the repos and youtube video. 
 

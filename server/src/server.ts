@@ -20,7 +20,6 @@ const gameServer = new Server({
     }),
 })
 
-
 gameServer.define("ChatRoom", ChatRoom);
 gameServer.define("GameRoom", GameRoom);
 
