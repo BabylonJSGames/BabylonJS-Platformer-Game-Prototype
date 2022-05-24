@@ -1,4 +1,4 @@
-import {Room} from 'colyseus';
+import {Room} from '@colyseus/core';
 
 export class ChatRoom extends Room {
     maxClients = 64;

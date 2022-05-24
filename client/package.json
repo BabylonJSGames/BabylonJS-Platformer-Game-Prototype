@@ -19,10 +19,10 @@
   "dependencies": {
     "@babylonjs/core": "5.7.0",
     "@babylonjs/gui": "5.7.0",
+    "@babylonjs/inspector": "5.7.0",
     "@babylonjs/loaders": "5.7.0",
     "@babylonjs/materials": "5.7.0",
-    "@babylonjs/inspector": "5.7.0",
-    "colyseus.js": "^0.14.0"
+    "colyseus.js": "^0.14.18"
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
@@ -34,7 +34,7 @@
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^3.11.2",
+    "webpack-dev-server": "^4.9.0",
     "webpack-merge": "^5.8.0"
   }
 }

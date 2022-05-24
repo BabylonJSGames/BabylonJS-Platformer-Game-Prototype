@@ -1,8 +1,9 @@
 import express from "express";
 import cors from 'cors';
 import { createServer } from "http";
-import { Server } from "colyseus";
+import { Server } from "@colyseus/core";
 import { monitor } from "@colyseus/monitor";
+import { WebSocketTransport } from "@colyseus/ws-transport";
 
 import { GameRoom } from "./rooms/GameRoom";
 import { ChatRoom } from "./rooms/ChatRoom";
@@ -14,8 +15,11 @@ app.use(cors());
 app.use(express.json())
 
 const gameServer = new Server({
-    server: createServer(app)
-});
+    transport: new WebSocketTransport({ 
+        server: createServer(app)
+    }),
+})
+
 
 gameServer.define("ChatRoom", ChatRoom);
 gameServer.define("GameRoom", GameRoom);

@@ -1,4 +1,4 @@
-import {Room, Client} from 'colyseus';
+import {Room, Client} from '@colyseus/core';
 import { PlayerCrouchSchema, PlayerDirectionSchema, PlayerKeySchema, PlayerPositionSchema } from '../schema/PlayerSchema';
 
 import {StateHandlerSchema} from '../schema/StateHandlerSchema';
