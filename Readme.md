@@ -106,7 +106,7 @@ What this project does not include:
 - You are free to use whichever mesh shapes, sizes and textures as you please. This includes the Goal mesh and the Collider meshes as well.    
 - The player has a width of 4 and a height of 8. The player can crouch to a height of 4 instead. Take this into account when creating your level. The cylinder mesh in `templateLevel.blend` has these metrics, so you can use this for reference.
 - You will very likely have to play around with the level to ensure the player controls match well with the level design and layout.
-- ~~Some lights and shadows functionalities is missing for the blender to BabylonJS exporter, this might help you out: https://forum.babylonjs.com/t exporting-shadows-from-blender-to-babylon-js/18580/5.~~ EDIT!! This seems to have been solved in the 2.93 version of the blendet exporter.
+- ~~Some lights and shadows functionalities is missing for the blender to BabylonJS exporter, this might help you out: https://forum.babylonjs.com/texporting-shadows-from-blender-to-babylon-js/18580/5.~~ EDIT!! This seems to have been solved in the 2.93 version of the blendet exporter.
 - For best shadows and light, look into the [level1.BABYLON](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/public/assets/scenes/Level1.babylon) for inspiration, scroll down to *Lights* and *shadowGenerators*, also check out the forum link above.
 
 ## Disclaimer

@@ -1,5 +1,5 @@
 import {Engine} from "@babylonjs/core/Engines/engine";
-import {Client} from "colyseus.js";
+import Colyseus from "colyseus.js";
 
 import Level from "./levels/Level";
 import GameRoom from "./networking/rooms/GameRoom";
@@ -67,10 +67,12 @@ export default class Game {
         if (portDevelopment) {
             socketAddressDevelopment += ':' + portDevelopment;
         }
+        // if game is run locally use socketAddressDevelopment
         if (hostDevelopment === "localhost") {
-            Game.client = new Client(socketAddressDevelopment);
+            Game.client = new Colyseus.Client(socketAddressDevelopment);
+        //if game is hosted online (heroku and netlify) use socketAddressProduction
         } else {
-            Game.client = new Client(Config.socketAddressProduction);
+            Game.client = new Colyseus.Client(Config.socketAddressProduction);
         }
 
         console.log("DEV HOST: " +hostDevelopment);
