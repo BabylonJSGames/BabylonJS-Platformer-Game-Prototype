@@ -1,4 +1,4 @@
-import {Room} from "colyseus"
+import {Room} from "colyseus.js"
 import Game from "../../Game";
 import Player from "../../player/Player";
 import {StateHandlerSchema} from "../schema/StateHandlerSchema"

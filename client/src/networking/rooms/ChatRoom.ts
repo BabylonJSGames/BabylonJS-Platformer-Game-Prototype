@@ -1,4 +1,4 @@
-import {Room} from "colyseus"
+import {Room} from "colyseus.js"
 
 import Game from "../../Game";
 
