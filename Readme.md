@@ -3,7 +3,7 @@ This project is a multiplayer 3d platformer game prototype. The game is similar 
 
 The project is written purely in TypeScript.
 
-An online version of the game can be found here: https://kzclimbing.netlify.app/client/public/index.html
+An online version of the game can be found here: https://kzclimbing.netlify.app
 
 ![Demo](play.gif)
 
@@ -70,13 +70,13 @@ What this project does not include:
 11. Create a new site *new site from git* and connect to your github choosing the forked repo.
 12. Press *deploy site*.
 13. Go to *site settings* and press *change site name* and change it to what ever you like then press *save*.
-    - The site will be deployed at https://WhatEverYouNamedIt.netlify.app/client/public/index.html. 
+    - The site will be deployed at https://WhatEverYouNamedIt.netlify.app 
 14. Then press on *build and deploy*.
 15. Press *edit build settings*.
 16. *Base birectory* should be set to *client*, *build command* should be *npm run build* and *publish directory* should be *client/public*, then press *save*.
 17. Go to *deploy* and press *Trigger deploy* then choose *clear cashe and deploy site*.
     - Now client side should be up and running.
-    - If you go to https://WhatEverYouNamedIt.netlify.app/client/public/index.html in your browser you should be able to play the game with friends now.
+    - If you go to https://WhatEverYouNamedIt.netlify.app in your browser you should be able to play the game with friends now.
 
 ## Guide to making your own maps in Blender
 1. Download and install [Blender](https://www.blender.org/).
