@@ -73,7 +73,7 @@ What this project does not include:
     - The site will be deployed at https://WhatEverYouNamedIt.netlify.app/client/public/index.html. 
 14. Then press on *build and deploy*.
 15. Press *edit build settings*.
-16. *Base birectory* should be set to *client*, *build command* should be *npm run build* and *public directory* should be *client/*, then press *save*.
+16. *Base birectory* should be set to *client*, *build command* should be *npm run build* and *publish directory* should be *client/public*, then press *save*.
 17. Go to *deploy* and press *Trigger deploy* then choose *clear cashe and deploy site*.
     - Now client side should be up and running.
     - If you go to https://WhatEverYouNamedIt.netlify.app/client/public/index.html in your browser you should be able to play the game with friends now.
