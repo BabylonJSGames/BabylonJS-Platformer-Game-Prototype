@@ -22,10 +22,10 @@ export default class GameRoom {
         this.onAddPlayers();
         this.onRemovePlayers();
     }
-
+    
     private async initJoinOrCreateRoom() {
         this.room = await Game.client.joinOrCreate<StateHandlerSchema>("GameRoom")   
-        console.log(this.room.sessionId, "joined", this.room.name);    
+        console.log(this.room.sessionId, "joined", this.room.name);  
     }
 
     private onMessage(){

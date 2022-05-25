@@ -32,7 +32,7 @@ export default class FullScreenUI {
         infoFrame.cornerRadius = 15;
         infoFrame.thickness = 2;
         infoFrame.widthInPixels = 370;
-        infoFrame.heightInPixels = 285;
+        infoFrame.heightInPixels = 325;
         this.advancedTexture.addControl(infoFrame);
 
         const infoStack = new StackPanel("infoStack");
@@ -44,6 +44,7 @@ export default class FullScreenUI {
         infoStack.addControl(this.getInfoText("Restart level with:", "P"));
         infoStack.addControl(this.getInfoText("Set to first-person POV with:", "1"));
         infoStack.addControl(this.getInfoText("Set to third-person POV with:", "2"));
+        infoStack.addControl(this.getInfoText("To start chatting press:", "ESC"));
         infoFrame.addControl(infoStack);        
     }
 

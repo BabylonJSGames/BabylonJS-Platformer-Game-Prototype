@@ -29,7 +29,7 @@ html, body {
     position:absolute;
     border: 2px solid grey;
     width: 500px;
-    height: 150px;
+    height: 200px;
     overflow-y: scroll;
     left: 0px;
     bottom: 30px;

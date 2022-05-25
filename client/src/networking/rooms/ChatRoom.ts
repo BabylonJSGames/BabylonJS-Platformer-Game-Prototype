@@ -3,7 +3,7 @@ import {Room} from "colyseus.js"
 import Game from "../../Game";
 
 export default class ChatRoom {
-    private room:  Room;
+    public room:  Room;
     private chatBox: HTMLElement = document.getElementById("chat-box");
     private chatInput: HTMLElement = document.getElementById("chat-input");
     private chatForm: HTMLElement = document.getElementById("chat-form");
@@ -19,7 +19,7 @@ export default class ChatRoom {
 
     private async initJoinOrCreateRoom() {
         this.room = await Game.client.joinOrCreate("ChatRoom");
-        console.log(this.room.sessionId, "joined", this.room.name);
+        console.log(this.room.sessionId, " joined ", this.room.name);
     }
 
     private onsend(chatForm: HTMLElement, chatInput:HTMLInputElement) {
