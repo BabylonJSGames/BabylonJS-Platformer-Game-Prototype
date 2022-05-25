@@ -1,7 +1,7 @@
 # KZ Climbing - A BabylonJS and Colyseus game prototype
-This project is a multiplayer 3d platformer game prototype. The game is similar to "KZ" maps in Counter Strike. It utilises the [BabylonJS](https://www.babylonjs.com/) framework for rendering and the [Colyseus](https://www.colyseus.io/) framework for the multiplayer aspect.
+This project is a multiplayer 3d platformer game prototype. The game is similar to "KZ" maps in Counter Strike. It utilises the [BabylonJS](https://www.babylonjs.com/) framework for rendering and the [Colyseus](https://www.colyseus.io/) framework for the multiplayer aspect. It is a very strong boilerplate that can be used by beginners.
 
-The project is written purely in TypeScript.
+The project is written in TypeScript, HTML and CSS.
 
 An online version of the game can be found here: https://kzclimbing.netlify.app
 
@@ -18,7 +18,7 @@ What this project includes:
   - Implementation for cloyseus schema (client and server side)
   - Simple chat functionality
   - Colyseus monitor and loadtest for serverside
-3. Contains a [config.ts](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/src/Config.ts) file used for chaning important parameters
+3. Contains a [config.ts](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype/blob/master/client/src/Config.ts) file used for changing important parameters
 4. A guide on how to create your own level and import it to Babylon from blender.
 5. Examples for how to setup webpack.xxx.js, tsconfig.json and package.json files
 6. An easy guild on how to deploy the game locally and online using netlify with heroku
