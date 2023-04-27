@@ -11,7 +11,6 @@ import { ChatRoom } from "./rooms/ChatRoom";
 const port = Number(process.env.PORT || 8081);
 const app = express();
 
-app.use(cors());
 app.use(cors({
   'allowedHeaders': ['sessionId', 'Content-Type'],
   'exposedHeaders': ['sessionId'],
