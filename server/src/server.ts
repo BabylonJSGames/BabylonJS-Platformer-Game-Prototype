@@ -13,6 +13,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json())
+app.options('*', cors());
 
 const gameServer = new Server({
     transport: new WebSocketTransport({ 
