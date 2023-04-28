@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "build": "npn install && tsc",
+    "build": "npm install && tsc",
     "heroku-postbuild": "tsc",
     "watch:build": "tsc --w",
     "start": "node ./dist/server.js",
