@@ -53,18 +53,31 @@ What this project does not include:
 1. Create an account both on netlify and heroku.
 2. Fork this [repo](https://github.com/BabylonJSGames/BabylonJS-Platformer-Game-Prototype.git) to your own github. 
 
-### Heroku (Server side)
+### Heroku (Server side) - Heroku is not free anymore, you need to buy dynos
 3. Create a new app and give it a name, then choose a region.
 4. Choose github as deploy method and find the forked repo on your github then press *connect*.
-5. Now press on *settings* tab and the press on *reveal config vars*.
-6. Key should be `PROJECT_PATH` and value should be `server`, then press *add*.
-7. Now press *add build pack* and add this: `https://github.com/timanovsky/subdir-heroku-buildpack.git` then press *save changes*.
-8. Again press *add build pack* this time also add nodejs then press *save changes*.
+5. Make sure that the variable *socketAddressProduction* in the *config.ts* file inside the client folder says `wss://NAMEOFYOURSERICE.herokuapp.com`
+    - the name of your service is the name you gave the app.
+6. Now press on *settings* tab and the press on *reveal config vars*.
+7. Key should be `PROJECT_PATH` and value should be `server`, then press *add*.
+8. Now press *add build pack* and add this: `https://github.com/timanovsky/subdir-heroku-buildpack.git` then press *save changes*.
+9. Again press *add build pack* this time also add nodejs then press *save changes*.
     - Make sure that `https://github.com/timanovsky/subdir-heroku-buildpack.git` is highest up in the build pack!!!
-9. Now go press on *deploy* tab and sroll down and press on *deploy branch*
+10. Now go press on *deploy* tab and sroll down and press on *deploy branch*
     - You should see it build and after a few seconds it should be finished.
-10. Now scroll up and press on *more* and choose *view logs*
+11. Now scroll up and press on *more* and choose *view logs*.
     - If everything is well you should be able to spot the output *listening on http://localhost:xxxx* in the logs
+
+### Or Render (Server side)
+12. Make sure to connect to your github to be abe to use the forked repo.
+13. Make sure that the variable *socketAddressProduction* in the *config.ts* file inside the client folder says `wss://NAMEOFYOURSERICE.onrender.com`
+    - the name of your service is the name you gave the Web Service.
+14. Create a new Web Service and connect to the forked repo.
+15. Give it a name, make sure the region is closest to your contry, branch is master, and root directory is `server`.
+16. Make sure the Runtime is "node". 
+17. Build command is `npm run buld` and the start command is `npm run start`.
+18. Finally press *Create Web Service*.
+19. Find the service you crated and press *Manual Deploy*
 
 ### Netlify (client side) 
 11. Create a new site *new site from git* and connect to your github choosing the forked repo.
