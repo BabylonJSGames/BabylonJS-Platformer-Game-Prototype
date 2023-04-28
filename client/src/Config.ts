@@ -8,5 +8,5 @@ export default class Config {
     // quick way to target any level made in blender, see public/assets/scenes.
     public static levelName = "Level1.babylon";
     // this address currently hosts the game
-    public static socketAddressProduction = "wws://kzclimbing.onrender.com";
+    public static socketAddressProduction = "wss://kzclimbing.onrender.com";
 }
